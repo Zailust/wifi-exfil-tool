@@ -4,7 +4,7 @@
   
 ![Python](https://img.shields.io/badge/python-3.7%2B-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows-lightgrey)
+![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20Windows%20%7C%20macOS-lightgrey)
 
 **An offensive security toolkit for WiFi credential extraction and penetration testing**
 
@@ -33,7 +33,8 @@ wifi-exfil-tool/
 ├── cleanup.sh            # Process and file cleanup utility
 ├── templates/            # Platform-specific payload templates
 │   ├── windows.ps1.tpl   # Windows PowerShell extraction template
-│   └── linux.sh.tpl      # Linux NetworkManager extraction template
+│   ├── linux.sh.tpl      # Linux NetworkManager extraction template
+│   └── macos.sh.tpl     # macOS Keychain extraction template
 ├── payloads/             # Generated attack payloads (created at runtime)
 ├── captures/             # Collected credentials (created at runtime)
 └── cloudflared/          # Cloudflare tunnel binary (downloaded at runtime)
@@ -77,7 +78,7 @@ chmod +x launch.sh cleanup.sh
 ### Launcher (`launch.sh`)
 Interactive setup script featuring:
 - Animated terminal interface with branding
-- Cross-platform payload generation (Windows/Linux)
+- Cross-platform payload generation (Windows/Linux/macOS)
 - **Enhanced directory management**: Creates dedicated `payloads/`, `captures/`, and `cloudflared/` directories within tool directory
 - Cloudflare tunnel establishment for external connectivity
 - Real-time capture monitoring
@@ -93,7 +94,15 @@ Interactive setup script featuring:
 **Linux Template (`linux.sh.tpl`)**:
 - Leverages `nmcli` NetworkManager for credential extraction
 - Targets 802.11 wireless connections specifically
+- Fixed to avoid duplicate SSID/PSK output
 - Includes operational security measures (history clearing)
+
+**macOS Template (`macos.sh.tpl`)**:
+- Uses `security find-generic-password` for Keychain access
+- Extracts current WiFi network and all saved passwords
+- Leverages `airport` command for network info
+- Uses `plutil` to read saved network preferences
+- Includes self-destruction and history clearing
 
 ## 🔧 Technical Details
 
